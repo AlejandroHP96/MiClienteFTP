@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="67.20001220703125" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0000114440918" minWidth="10.0" prefWidth="350.3999877929688" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Puerto:" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </GridPane.margin></Label>
+      <Label text="Servidor:">
+         <GridPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </GridPane.margin></Label>
+      <Label text="Usuario:" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </GridPane.margin></Label>
+      <Label text="Contraseña:" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </GridPane.margin></Label>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="43.0" prefWidth="326.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button fx:id="conectarButton" mnemonicParsing="false" onAction="#onConectarButtonAction" text="Conectar" />
+            <Button fx:id="cancelarButton" mnemonicParsing="false" onAction="#onCancelarButtonAction" text="Cancelar" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="3.0" right="3.0" />
+         </GridPane.margin>
+      </HBox>
+      <TextField fx:id="servidorTextField" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </GridPane.margin>
+      </TextField>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="puertoTextField" prefHeight="26.0" prefWidth="57.0">
+               <HBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <TextField fx:id="usuarioTextField">
+               <HBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="contrasenaTextField">
+               <HBox.margin>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
